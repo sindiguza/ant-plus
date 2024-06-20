@@ -20,12 +20,11 @@
 		"node": ">=6.0.0"
 	},
 	"dependencies": {
-		"usb": "^1.6.0"
+		"usb": "^2.13.0"
 	},
 	"devDependencies": {
-		"typescript": "^3.6.4",
-		"@types/node": "^6.0.0",
-		"@types/usb": "^1.5.1"
+		"@types/node": "^20.14.6",
+		"typescript": "^5.4.5"
 	},
 	"files": [
 		"ant-plus.js",
