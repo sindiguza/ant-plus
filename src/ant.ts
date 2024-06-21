@@ -321,7 +321,7 @@ export class USBDriver extends events.EventEmitter {
 	constructor(private idVendor: number, private idProduct: number, dbgLevel = 0) {
 		super();
 		this.setMaxListeners(50);
-		usb.setDebugLevel(dbgLevel);
+		usb.usb.setDebugLevel(dbgLevel);
 	}
 
 	private getDevices() {
@@ -444,7 +444,7 @@ export class USBDriver extends events.EventEmitter {
 				}
 			}
 		};
-		usb.on('attach', fn);
+		usb.usb.on('attach', fn);
 		if (this.is_present()) {
 			// @ts-ignore
 			setImmediate(() => usb.emit('attach', this.device));
